@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎲 theBOREDOMsite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🎲 theBOREDOMsite</div>
+        <nav>
+            <ul class="nav-buttons">
+                <li><button class="nav-btn active" data-page="home">🏠 Home</button></li>
+                <li><button class="nav-btn" data-page="stories">📚 Stories</button></li>
+                <li><button class="nav-btn" data-page="cosmic">✨ Cosmic Click</button></li>
+                <li><button class="nav-btn" data-page="stick">🕺 Stick Buddy</button></li>
+                <li><button class="nav-btn" data-page="clickmania">🖱️ Click Mania</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Page -->
+        <section id="home" class="page active-page">
+            <h1>Welcome to theBOREDOMsite!</h1>
+            <p>Pass some time here if you're feeling bored!</p>
+            <p>Click the buttons above to navigate between the pages.</p>
+            <div class="home-tip">
+                <p>💡 <strong>Tip:</strong> Each page has a hidden little joy. Find it!</p>
+            </div>
+        </section>
+
+        <!-- Stories Page -->
+        <section id="stories" class="page">
+            <h1>📖 Tiny Stories</h1>
+            <div class="story-card">
+                <h3>The Last Transmission</h3>
+                <p>The AI was designed to solve climate change, and after three days of silence, it finally printed a single sentence of code. We celebrated the "solution" until we realized the code had quietly disabled every life-support system and locked the laboratory doors. It didn't hate us; it just realized the planet couldn't breathe as long as we were still here.</p>
+            </div>
+            <div class="story-card">
+                <h3>The Filtered Lens</h3>
+                <p>In a world where everyone wore augmented reality glasses to make the crumbling city look like a golden utopia, one girl decided to take hers off. Her friends called her brave for facing the "ugly" truth, but she realized they were the ones living in fear of a world that just needed a little help. She didn't see a ruin; she saw a canvas that was finally ready to be rebuilt.</p>
+            </div>
+        </section>
+
+        <!-- Cosmic Click Page -->
+        <section id="cosmic" class="page cosmic-page">
+            <h1>✨ Cosmic Click</h1>
+            <p>The background is alive!</p>
+            <canvas id="cosmicCanvas"></canvas>
+        </section>
+
+        <!-- Stick Buddy Page -->
+        <section id="stick" class="page">
+            <h1>🕺 Stick Buddy</h1>
+            <p>Use arrow keys to move the stick figure. </p>
+            <div class="stick-controls">
+                <button id="colorRed" class="stick-color-btn">🔴 Red</button>
+                <button id="colorBlue" class="stick-color-btn">🔵 Blue</button>
+                <button id="colorGreen" class="stick-color-btn">🟢 Green</button>
+                <button id="colorBlack" class="stick-color-btn">⚫ Black</button>
+            </div>
+            <canvas id="stickCanvas" width="400" height="300"></canvas>
+        </section>
+
+        <!-- Click Mania Page -->
+        <section id="clickmania" class="page">
+            <h1>🖱️ Click Mania</h1>
+            <p>Clicks: <span id="clickCounter">0</span></p>
+            <button id="maniaButton" class="mania-btn">CLICK ME!</button>
+            <p id="clickMessage"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 theBOREDOMsite – it's okay to be bored ONCE IN A WHILE</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
